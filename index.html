@@ -1,28 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Memory Match</title>>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Memory Match Game</title>
+
+    <!--external CSS file-->
     <link rel="stylesheet" href="static/css/style.css">
+
+    <!---->
     <script src="static/js/script.js" defer></script>
 </head>
+
 <body>
-    <h1>Memory Match Game</h1>
-    <div id="container"></div>
-    <h1 id="attemps">
+    <br>
+    <img src="static/images/Emmalogo1.png" alt="Emma Logo" style="float: left;width:132px;height:132px;"><br><br><br>
+    <h1>Memory Match Game</h1><br><br><br>
+
+    <!---->
+    <div id="container"></div><br>
+
+    <span id="attemps">
         Attemps:
-    </h1>
-    <h1 id="found">
+    </span><br><br>
+    <span id="found" >
         Found:
-    </h1>
-    <div id="congration"></div>
-    <button onclick="myFunction()">Restart Game</button>
-    <script>
-        function myFunction(){
-            location.reload();
-        }
-    </script>
+    </span><br><br>
+    
+    <div id="congratulation"></div>
+
+    <!--restart the game-->
+    <button onclick="reloadPage()" title="Click! Let's restart the game!">Restart Game</button><br><br>
+    <a href="https://github.com/Emma6688/memory_match_game" target="_blank"> The source code is here! </a>
+    <p>Emma Yan</p>
 </body>
 </html>
